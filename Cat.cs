@@ -11,7 +11,7 @@ namespace Lab7_ZOO
     public class Cat : DomesticatedMammal, IClimb //the cat has 1 interfaces IClimb
     {
         // Concrete property
-        public override string FurColor { get; set; }
+         public override string FurColor { get; set; }
 
         // Constructor
         public Cat(string name, int age, double weight, string furColor) : base(name, age, weight)
