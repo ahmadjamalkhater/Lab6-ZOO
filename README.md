@@ -1,12 +1,12 @@
 # Zoo Management System
 
 ## Introduction
-In this project, I have implemented a zoo management system using object-oriented programming principles. The system includes various animal classes with inheritance and polymorphism, allowing us to represent different categories of animals in the zoo.
+In this project, I have developed a zoo management system that utilizes object-oriented programming principles. The system incorporates various animal classes with inheritance and polymorphism concepts, enabling the representation of different animal categories within the zoo.
 
 ## Digital UML Drawing
 This is UML diagram a visual representation of the class hierarchy and relationships between different animal classes in the zoo.
 
-![here](./Lab6-ZOO/ZOOUML.png)
+![here](./Lab7-ZOO/ZOOUMLLab7.png)
 
 ## Technical Documentation : OOP Principles
 
@@ -24,3 +24,99 @@ Inheritance is the principle of creating new classes (derived classes) from exis
 Polymorphism is the principle of using a single interface (base class or interface) to represent different types of objects. It allows objects of different classes to be used interchangeably through a common interface, enabling code reuse and flexibility. In our zoo management system, we utilize polymorphism to treat different animals uniformly based on their common base class or interface. For example, we can store various animals in a list of type `Animal` and call their common methods without knowing the specific derived class.
 
 **Example in the project:** The `Animal` class defines the `Sound()` method, which is overridden by each concrete animal class (e.g., `Horse`, `Dog`, `Snake`). We can call the `Sound()` method on any animal object regardless of its specific type.
+
+### Interface
+An interface, is a blueprint or contract that defines a set of methods or properties that a class must implement. It establishes a common behavior or functionality that multiple classes can adhere to, promoting code consistency and allowing objects of different classes to be treated uniformly based on their shared interface.
+
+### Interfaces in my Project
+
+1. `IAttack` : This interface defines the behavior of attacking. It includes a method `MightAttack()` that represents the action of attacking. The interface is implemented by classes representing animals capable of attacking, such as Horse , Snake and Dog.
+
+```
+
+public interface IAttack
+{
+    void MightAttack();
+}
+
+```
+
+
+2. `IClimb` : This interface defines the behavior of climbing. It includes a method Climb() that represents the action of climbing. The interface is implemented by classes representing animals capable of climbing, such as the Horse, Turtle, and Cat classes.
+
+```
+
+public interface IClimb
+{
+    void MightAttack();
+}
+
+```
+
+**the Horse Class** 
+
+```
+
+//<IAttack> implementation
+public string MightAttack()
+{
+return "If I'm afraid of you, I may kick or fight back as a defense!";
+}
+
+//<IClimb> implementation
+public string MightClimb()
+{
+return "I can climb up and down stairs. Also, mountains!";
+}
+
+```        
+
+
+**the Snake class**
+
+```
+
+//<IAttack> implementation
+public string MightAttack()
+{
+return "If provoked or threatened, I attack!";
+}
+
+```   
+
+
+**the Dog class**
+
+```
+
+//<IAttack> implementation
+public string MightAttack()
+{
+return "If I feel threatened, guarding my food I may attack as a defense!";
+}
+
+``` 
+
+**the Turtle Class** 
+
+```
+
+//<IClimb> implementation
+public string MightClimb()
+{
+return "I can climb Trees!";
+}
+
+``` 
+
+**the Cat Class** 
+
+```
+
+//<IClimb> implementation
+public string MightClimb()
+{
+return "We are built to climb and jump! walls, fences, trees.. more and more!";
+}
+
+``` 

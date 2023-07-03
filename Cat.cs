@@ -1,13 +1,14 @@
-﻿using System;
+﻿using Lab6_ZOO;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lab6_ZOO
+namespace Lab7_ZOO
 {
     // Concrete class for cats (inherits from DomesticatedMammal)
-    public class Cat : DomesticatedMammal
+    public class Cat : DomesticatedMammal, IClimb //the cat has 1 interfaces IClimb
     {
         // Concrete property
         public override string FurColor { get; set; }
@@ -44,6 +45,12 @@ namespace Lab6_ZOO
         public override string Eat()
         {
             return "The cat is eating cat food.";
+        }
+
+        //<IClimb> Interface method MightClimb() implementation
+        public string MightClimb()
+        {
+            return "We are built to climb and jump! walls, fences, trees.. more and more!";
         }
     }
 }

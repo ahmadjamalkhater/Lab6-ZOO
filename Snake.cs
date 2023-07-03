@@ -1,13 +1,14 @@
-﻿using System;
+﻿using Lab6_ZOO;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lab6_ZOO
+namespace Lab7_ZOO
 {
     // Concrete class for snakes (inherits from Reptile)
-    public class Snake : Reptile
+    public class Snake : Reptile, IAttack //the Snake has 1 interface IAttack 
     {
         // Concrete property
         public override string SkinColor { get; set; }
@@ -44,6 +45,13 @@ namespace Lab6_ZOO
         public override string Eat()
         {
             return "The snake swallows its prey whole.";
+        }
+
+
+        //<IAttack> Interface method MightAttack() implementation
+        public string MightAttack()
+        {
+            return "If provoked or threatened, I attack!";
         }
 
     }
