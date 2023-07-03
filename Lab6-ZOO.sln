@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab6-ZOO", "Lab6-ZOO.csproj", "{258665BA-A52B-42B4-A65F-5F25991BD953}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab7-ZOO", "Lab7-ZOO.csproj", "{258665BA-A52B-42B4-A65F-5F25991BD953}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestLab6-ZOO", "..\TestLab6-ZOO\TestLab6-ZOO.csproj", "{4DB3EC18-BE29-4697-B7D2-6D1F2D141CBD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestLab6-ZOO", "..\TestLab6-ZOO\TestLab6-ZOO.csproj", "{4DB3EC18-BE29-4697-B7D2-6D1F2D141CBD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

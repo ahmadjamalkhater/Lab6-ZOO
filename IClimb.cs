@@ -4,9 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lab6_ZOO
+namespace Lab7_ZOO
 {
-    internal class IClimb
+    //<IClimb Interface>
+    public interface IClimb
     {
+        //<IClimb Interface method MightClimb()>
+        public string MightClimb();
     }
 }
